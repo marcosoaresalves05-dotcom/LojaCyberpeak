@@ -1,0 +1,64 @@
+* { 
+    box-sizing: border-box;
+}
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+}
+body {
+    margin: 24px;
+    background: linear-gradient(180deg, #38151c 0%, #070a11 100%);
+    color: #4fbab7;
+}
+table {
+    border-collapse: collapse;
+    width:40%;
+    border: 2px solid #55151b;
+}
+.Tabela {
+    display: flex;
+    justify-content: center;
+}
+th, td {
+    text-align: left;
+    padding: 14px;
+    background-color: #151120;
+}
+th {
+    background-color: #5ef7ff;
+    alignment-baseline: center;
+    color: #0f0041;
+}
+body {
+    text-align: center;
+    font-family: CyberUI;
+}
+#meuTitulo {
+    color: #dafe31;
+    text-align: center;
+    text-shadow: 2px 2px #5faad2;
+    font-family: Cyberpeak;
+    font-size: 1.5cm;
+}
+h2 {
+    color: #e54e42;
+}
+
+@font-face {
+    font-family: Cyberpeak;
+    src: url(Fontes/Cyberpunk.woff);
+}
+@font-face {
+    font-family: CyberUI;
+    src: url(Fontes/EncodeSansCondensed-Regular.woff);
+}
+label {
+    display: block;
+    margin-top: 10px
+}
+input, select, textarea {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px; 
+}

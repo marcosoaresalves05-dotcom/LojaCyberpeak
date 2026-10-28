@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="UTF-8"> <!--Codificação de caracteres sendo que o website usa, não precisa de tag de fechamento-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <img solid src="img/PEAK_DE_INFORMATICA.png">
+
+    <head> <!--Cabeçalho da página, é o que vai ficar na guia do site-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <link rel="stylesheet" href="Style.css">
+        <!-- <link rel="stylesheet" href="Tema.css"> -->
+        <title>Cyberpeak Informática</title>
+        <link rel="icon" type="image/x-icon" href="img/cyberpeakks.ico"> <!--Mesma coisa com o link de CSS, porém muda o icone.-->
+    </head>
+
+    <body> <!--Corpo do texto-->
+        <h4 class="carrinho"><i class="fa-solid fa-cart-shopping"></i> Carrinho: <span id="contador">0 </span> Itens</h4>
+        <p id="aviso" class="aviso"></p>
+        <p class="atencao">Bem-vindo á cyberpeak, onde vai encontrar produtos de qualidade que só você só veria em tempos futuros. Acessórios, periféricos e todo o melhor hardware do mercado.<!--Parágrafo do website-->
+        </p>
+        <a href="https://www.youtube.com/watch?v=XfELJU1mRMg">Instagram da nossa loja:</a> <!--Tag de link, href sendo a referência (URL) de pra onde o link irá levar.-->
+
+        <h2>Conheça nosso estoque:</h2>
+        
+        <main>
+            <section>
+                <h2>Produtos</h2>
+                <div id="vitrine" class="vitrine"></div>
+            </section>
+        </main>
+
+    <section class="categoria">
+            <h2>Tipos de produtos que vendemos:</h2>
+        <ul> <!--Lista ordenada-->
+            <li>Fones de ouvido</li>
+            <li>Carregadores</li>
+            <li>Mouses</li>
+            <li>Teclados</li>
+            <li>Produtos de limpeza de hardware</li>
+        </ul>
+    </section>
+    
+    <h2>Nosso Catálogo</h2> <!--Título da tabela-->
+    <p>Produtos disponíveis em estoque:</p>
+    <div class="Tabela">
+        <table>
+            <thread>
+                <tr>
+                    <th>Produto:</th> <!--Itens da tabela-->
+                    <th>Valor:</th>
+                    <th>Quantidade:</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>Carregador turbo Tipo C</td> <!--Dados da tabela-->
+                    <td>25</td>
+                    <td class="preco">R$15,99</td>
+                </tr>
+                <tr>
+                    <td>Mouse sem fio attack shark</td>
+                    <td>45</td>
+                    <td class="preco">R$78,00</td>
+                </tr>
+                <tr>
+                    <td>Teclado magnético akko tac75</td>
+                    <td>20</td>
+                    <td class="preco">R$200,88</td>
+                </tr>
+                <tr>
+                    <td>Fone Bluetooth H'Maston</td>
+                    <td>55</td>
+                    <td class="preco">R$50,00</td>
+                </tr>
+                <tr>
+                    <td>Microfone elgato</td>
+                    <td>25</td>
+                    <td class="preco">R$250,00</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de itens em estoque:</td>
+                    <td>170</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <h2>Conheça nossos produtos:</h2>
+
+    <section id="cadastro">
+        <h2>Cadastre-se</h2>
+        
+        <form action="" method="post">
+            
+            <fieldset>
+                <legend>Seus dados</legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome"
+                        placeholder="Como você quer ser chamado"
+                        required minlength="3" maxlength="80">
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email"
+                        placeholder="voce@exemplo.com" required>
+
+                <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone"
+                 pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                 placeholder="11 99999-9999">
+            </fieldset>
+
+            <fieldset>
+                <legend>Sua mensagem</legend>
+
+                <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida sobre um produto</option>
+                        <option value="pedido">Acompanhar um pedido</option>
+                        <option value="troca">Troca ou devolução</option>
+                        <option value="parceria">Parceria</option>
+                    </select>
+
+                <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"
+                                placeholder="Escreva aqui o que você precisa..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="aceite" required>
+                    Aceito receber novidades da loja
+                </label>
+                <button type="submit">Enviar Cadastro</button>
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    </body>
+
+</html>
